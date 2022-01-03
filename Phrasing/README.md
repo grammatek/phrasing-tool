@@ -12,4 +12,6 @@ For parsed text, run:
 
 Finally, for phrasing, run:
 
-python phrasing.py lawparsed.txt lawphrased.txt
+```python phrasing.py lawparsed.txt lawphrased.txt```
+
+You can see examples of all files in the Phrasing folder.
