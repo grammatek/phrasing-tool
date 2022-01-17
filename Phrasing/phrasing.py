@@ -24,7 +24,7 @@ def pause_text(manipulated_list):
                     elif (manipulated_list[i][j][1] == 'sem' and manipulated_list[i][j-1][0] == 'NP'):
                         if (manipulated_list[i][j-2][0] == 'PP' or (manipulated_list[i][j-2][0] == 'NP' and manipulated_list[i][j-3][0] == 'PP')):
                             manipulated_list[i][j-1].append('<pau>')
-                    elif (manipulated_list[i][j][0] == 'CP') or (manipulated_list[i][j-2][0] == 'PP' and manipulated_list[i][j-1][0] == 'NP' and manipulated_list[i][j][0] == 'SCP' and not manipulated_list[i][j][1] == 'sem'):# and manipulated_list[i-2][0] not in ['NPs', 'APs']:
+                    elif (manipulated_list[i][j][0] == 'CP' and not manipulated_list[i][j-1][-1].startswith('tf')) or (manipulated_list[i][j-2][0] == 'PP' and manipulated_list[i][j-1][0] == 'NP' and manipulated_list[i][j][0] == 'SCP' and not manipulated_list[i][j][1] == 'sem'):# and manipulated_list[i-2][0] not in ['NPs', 'APs']:
                         manipulated_list[i][j-1].append('<pau>')
                     elif (manipulated_list[i][j][0] == 'SCP' and not manipulated_list[i][j][1] == 'sem'):
                         manipulated_list[i][j-1].append('<sil>')
