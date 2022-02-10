@@ -2,8 +2,9 @@ Go to https://github.com/hrafnl/icenlp/releases, download IceNLP-1.5.0.zip and e
 
 Start with a normalized file, one sentence per line (such as lawnormalized.txt)
 
-```mv lawnormalized.txt IceNLP/bat/icetagger/
-cd IceNLP/bat/icetagger```
+```mv lawnormalized.txt IceNLP/bat/icetagger/```
+
+```cd IceNLP/bat/icetagger```
 
 You want your tagged text inside the parsing folder. Inside the icetagger folder, for tagged text, run:
 
@@ -21,7 +22,8 @@ You want your parsed file in the phrasing folder. For parsed text, run:
 
 Finally, for phrasing, run:
 
-```cd ../../..
+```cd ../../..```
+
 ```python phrasing.py lawparsed.txt lawphrased.txt```
 
 You can see examples of all files in the Phrasing folder.
