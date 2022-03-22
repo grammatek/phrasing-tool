@@ -7,7 +7,8 @@ setup(
 	author='Helga Svala Sigurðardóttir',
 	author_email='helgas@ru.is',
 	url='https://github.com/grammatek/phrasing-tool',
-	packages=find_packages(),
+	package_dir={'': '.'},
+	packages=["Phrasing"],
 	install_requires=[
 		'setuptools',
 	],
