@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-	name='text-cleaner',
+	name='phrasing-tool',
 	version='0.1.0',
 	description='A phrasing tool that inserts pause tags into text based on phrases',
 	author='Helga Svala Sigurðardóttir',
